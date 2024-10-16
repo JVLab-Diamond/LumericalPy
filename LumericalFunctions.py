@@ -5,6 +5,8 @@ try:
     imp.load_source("lumapi", "C:/Program Files/Lumerical/v211/api/python/lumapi.py")
 try:
     imp.load_source("lumapi", "C:/Program Files/Lumerical/v241/api/python/lumapi.py")
+except FileNotFoundError:
+    print('Check the Lumerical API import path!')
 
 import lumapi
 
